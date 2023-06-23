@@ -2,6 +2,7 @@ from flask import Flask, redirect , render_template , url_for, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
+# buddu follow from here - https://youtu.be/Z1RJmh_OqeA?t=1873
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
@@ -66,3 +67,4 @@ if __name__ == "__main__":
     with app.app_context():
         db.create_all()
     app.run(debug=True)
+
